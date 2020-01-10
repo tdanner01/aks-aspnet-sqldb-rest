@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Before running this script, specify correct values for the following 4 variables !!!!
-AKS_RESOURCE_GROUP=myResourceGroup
+AKS_RESOURCE_GROUP=rgTim_Danner
 AKS_CLUSTER_NAME=akscluster
-ACR_RESOURCE_GROUP=myResourceGroup
-ACR_NAME=csulabtest
+ACR_RESOURCE_GROUP=rgTim_Danner
+ACR_NAME=tsdARCk8slab
 
 # Get the id of the service principal configured for AKS
 CLIENT_ID=$(az aks show --resource-group $AKS_RESOURCE_GROUP --name $AKS_CLUSTER_NAME --query "servicePrincipalProfile.clientId" --output tsv)
